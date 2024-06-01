@@ -24,7 +24,7 @@ jobs:
         run: npm ci
       - name: Run Tests
         run: npm run test
-  Build:
+  Deploy:
     needs: [Lint, Test]
     runs-on: ubuntu-latest
     steps:
@@ -36,3 +36,5 @@ jobs:
         run: npm ci
       - name: Run Build
         run: npm run build
+      - name: Deploy Code
+        run: echo "Deploying Code...."
