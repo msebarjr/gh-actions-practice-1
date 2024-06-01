@@ -1,0 +1,10 @@
+Create 2 Workflows
+  1. Workflow 1
+    - Lint, Test, & Simulates Deployment on "push
+    - Run the "lint", "test", and "build" scripts as in package.json
+      - Output message for each
+    - Use either 1 or 3 jobs for these steps
+  2.  Workflow 2
+    - Output Event Details on "issues"
+      - Output event details in the shell via "echo"
+      - Use the "issues" event and "github" context
