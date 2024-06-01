@@ -34,5 +34,5 @@ jobs:
         uses: actions/setup-node@v3
       - name: Install Dependencies
         run: npm ci
-      - name: Run Tests
+      - name: Run Build
         run: npm run build
